@@ -2,10 +2,6 @@ import streamlit as st
 import pydeck as pdk
 
 def show_page():
-    # 서울시 각 구의 중심 좌표 (위도, 경도)
-    if st.button("테스트"):
-        st.session_state.information +=1   
-        st.rerun()
 # 서울시 각 구의 중심 좌표와 정보
     seoul_districts = {
         "강남구": {"latitude": 37.5172, "longitude": 127.0473, "info": st.session_state.south},
